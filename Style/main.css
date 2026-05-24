@@ -759,6 +759,23 @@ footer {
     margin-top: 16px;
 }
 
+.study-archive-section {
+    background: white;
+}
+
+.archive-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.archive-card p + p {
+    margin-top: 10px;
+}
+
+.archive-meta {
+    color: #003366;
+    font-weight: bold;
+}
+
 .study-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

@@ -133,13 +133,48 @@
         });
     };
 
+    const renderBibleStudyArchive = (studies) => {
+        const grid = get("bible-study-archive-grid");
+        if (!grid || studies.length <= 1) {
+            return;
+        }
+
+        const archivedStudies = studies.slice(1);
+        grid.innerHTML = "";
+
+        archivedStudies.forEach((study) => {
+            const card = create("article", "info-card archive-card");
+            card.appendChild(create("span", "card-label", study.week || "Bible Study"));
+            card.appendChild(create("h3", "", study.theme || "Bible Study Notes"));
+            card.appendChild(create("p", "", study.dateRange || ""));
+
+            if (study.monthNote) {
+                card.appendChild(create("p", "archive-meta", study.monthNote));
+            }
+
+            if (study.summary) {
+                card.appendChild(create("p", "", study.summary));
+            }
+
+            if (study.detailPage) {
+                const link = create("a", "text-link", "Read Full Notes");
+                link.href = study.detailPage;
+                card.appendChild(link);
+            }
+
+            grid.appendChild(card);
+        });
+    };
+
     const hydrateSermonsPage = async () => {
         try {
             const studies = await loadJson("Content/bible-studies.json");
-            const currentStudy = publishedItems(studies)[0];
+            const publishedStudies = publishedItems(studies);
+            const currentStudy = publishedStudies[0];
 
             renderBibleStudy(currentStudy);
             renderTeachingFocus(currentStudy);
+            renderBibleStudyArchive(publishedStudies);
         } catch (error) {
             console.warn("Using built-in page content because content files could not be loaded.", error);
         }
