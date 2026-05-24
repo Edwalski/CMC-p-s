@@ -152,10 +152,6 @@
                 card.appendChild(create("p", "archive-meta", study.monthNote));
             }
 
-            if (study.summary) {
-                card.appendChild(create("p", "", study.summary));
-            }
-
             if (study.detailPage) {
                 const link = create("a", "text-link", "Read Full Notes");
                 link.href = study.detailPage;

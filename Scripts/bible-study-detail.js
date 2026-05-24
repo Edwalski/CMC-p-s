@@ -44,7 +44,33 @@
         return list;
     };
 
-    const renderStudy = (study) => {
+    const renderStudyNavigation = (studies, activeIndex) => {
+        const nav = create("nav", "study-detail-nav");
+        nav.setAttribute("aria-label", "Bible Study navigation");
+
+        const newerStudy = activeIndex > 0 ? studies[activeIndex - 1] : null;
+        const olderStudy = activeIndex < studies.length - 1 ? studies[activeIndex + 1] : null;
+
+        if (newerStudy) {
+            const newerLink = create("a", "study-nav-link", `Newer: ${newerStudy.week}`);
+            newerLink.href = newerStudy.detailPage || `bible-study.html?id=${encodeURIComponent(newerStudy.id)}`;
+            nav.appendChild(newerLink);
+        }
+
+        const archiveLink = create("a", "study-nav-link", "All Bible Studies");
+        archiveLink.href = "sermons.html#bible-study-archive";
+        nav.appendChild(archiveLink);
+
+        if (olderStudy) {
+            const olderLink = create("a", "study-nav-link", `Older: ${olderStudy.week}`);
+            olderLink.href = olderStudy.detailPage || `bible-study.html?id=${encodeURIComponent(olderStudy.id)}`;
+            nav.appendChild(olderLink);
+        }
+
+        return nav;
+    };
+
+    const renderStudy = (study, studies, activeIndex) => {
         document.title = `${study.week} Bible Study | Christ's Mission Church`;
         heroWeek.textContent = `${study.week} Bible Study`;
         heroTheme.textContent = study.theme;
@@ -53,6 +79,7 @@
         const backLink = create("a", "text-link back-link", "Back to Sermons");
         backLink.href = "sermons.html";
         detail.appendChild(backLink);
+        detail.appendChild(renderStudyNavigation(studies, activeIndex));
 
         const header = create("header", "notes-header");
         header.appendChild(create("span", "section-label", [study.year ? `Year ${study.year}` : "", study.monthNote || ""].filter(Boolean).join(" | ")));
@@ -88,6 +115,8 @@
 
             detail.appendChild(block);
         });
+
+        detail.appendChild(renderStudyNavigation(studies, activeIndex));
     };
 
     const showMissing = () => {
@@ -112,14 +141,16 @@
             const publishedStudies = Array.isArray(studies)
                 ? studies.filter((study) => study.published !== false)
                 : [];
-            const study = publishedStudies.find((item) => item.id === requestedId) || publishedStudies[0];
+            const foundIndex = publishedStudies.findIndex((item) => item.id === requestedId);
+            const activeIndex = foundIndex >= 0 ? foundIndex : 0;
+            const study = publishedStudies[activeIndex];
 
             if (!study) {
                 showMissing();
                 return;
             }
 
-            renderStudy(study);
+            renderStudy(study, publishedStudies, activeIndex);
         } catch (error) {
             console.warn(error);
             showMissing();
