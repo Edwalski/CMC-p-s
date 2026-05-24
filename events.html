@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events | Christ's Mission Church</title>
+    <link rel="stylesheet" href="Style/main.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo-container">
+                <img src="Images/logo.png" alt="Christ's Mission Church Logo" class="logo">
+                <span class="brand-text">Christ's Mission Church <small>Mizpah</small></span>
+            </div>
+
+            <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-controls="primary-navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links" id="primary-navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="sermons.html">Sermons</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="ministries.html">Ministries</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Member Portal</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-hero">
+        <h1>Events</h1>
+        <p>
+            Join us for worship, prayer, fellowship, outreach,
+            and gatherings that strengthen our church family.
+        </p>
+    </section>
+
+    <section class="event-updates">
+        <div class="event-alert" id="event-alert" hidden></div>
+
+        <div class="event-summary-grid">
+            <article class="event-summary-card">
+                <span class="card-label">Today</span>
+                <h2>Today at CMC</h2>
+                <p id="today-events">Checking today's events...</p>
+            </article>
+
+            <article class="event-summary-card">
+                <span class="card-label">Coming Up</span>
+                <h2>Upcoming Next</h2>
+                <p id="upcoming-event">Checking the next event...</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="events">
+        <span class="section-label">Special Upcoming Event</span>
+        <h2>Grace Upon Grace SN2: Kigooco Edition</h2>
+        <div class="special-event-grid">
+            <article class="special-event-card" data-event-id="kigooco-live-recording-2026">
+                <img src="Images/kigooco-sn2.jpeg" alt="Grace Upon Grace SN2 Kigooco Edition live recording poster" loading="lazy">
+                <div>
+                    <span class="card-label">Live Recording</span>
+                    <h3>Kigooco Edition</h3>
+                    <p class="feast-date">Saturday, June 13, 2026 | Gates open 1:00 PM</p>
+                    <p>
+                        Cynthia Wambui presents Grace Upon Grace SN2: Kigooco Edition,
+                        featuring Bishop Dr. Yakohv and guest ministers.
+                    </p>
+                    <p><strong>Venue:</strong> Life Church Limuru, Destiny Grounds.</p>
+                    <a href="https://gigs.madfun.com/event/801" class="text-link" target="_blank" rel="noopener noreferrer">Buy Tickets Online</a>
+                    <a href="tel:*672*66%23" class="text-link">Dial *672*66# for tickets</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="events">
+        <h2>Weekly Gatherings</h2>
+        <div class="event-list">
+            <article class="event-card" data-event-id="sunday-worship">
+                <div class="event-date">
+                    <span>Sun</span>
+                    <strong>8:30</strong>
+                </div>
+                <div>
+                    <h3>Sunday Worship Service</h3>
+                    <p>Prayer, praise and worship, Bible teaching, testimonies, presentations, announcements, and the sermon.</p>
+                </div>
+            </article>
+
+            <article class="event-card" data-event-id="monday-prayer-study">
+                <div class="event-date">
+                    <span>Mon</span>
+                    <strong>6:00</strong>
+                </div>
+                <div>
+                    <h3>Church Workers Prayer &amp; Bible Study</h3>
+                    <p>Church workers prayer hour from 6:00 - 7:00 PM, followed by Bible Study for all from 7:30 - 8:30 PM.</p>
+                </div>
+            </article>
+
+            <article class="event-card" data-event-id="tuesday-prayer-study">
+                <div class="event-date">
+                    <span>Tue</span>
+                    <strong>6:00</strong>
+                </div>
+                <div>
+                    <h3>Men's Prayer &amp; Bible Study</h3>
+                    <p>Men's and heads of families prayer hour from 6:00 - 7:00 PM, followed by Bible Study for all from 7:30 - 8:30 PM.</p>
+                </div>
+            </article>
+
+            <article class="event-card" data-event-id="wednesday-women">
+                <div class="event-date">
+                    <span>Wed</span>
+                    <strong>5:00</strong>
+                </div>
+                <div>
+                    <h3>Women Meeting, Prayer &amp; Bible Study</h3>
+                    <p>Women meet from 5:00 - 8:00 PM for prayer and their own Bible Study, early enough to return home and tend to their families.</p>
+                </div>
+            </article>
+
+            <article class="event-card" data-event-id="thursday-prayer-study">
+                <div class="event-date">
+                    <span>Thu</span>
+                    <strong>6:00</strong>
+                </div>
+                <div>
+                    <h3>Youths &amp; Singles Prayer &amp; Bible Study</h3>
+                    <p>Youths and singles prayer hour from 6:00 - 7:00 PM, followed by Bible Study for all from 7:30 - 8:30 PM.</p>
+                </div>
+            </article>
+
+            <article class="event-card" data-event-id="friday-prayer-study">
+                <div class="event-date">
+                    <span>Fri</span>
+                    <strong>6:00</strong>
+                </div>
+                <div>
+                    <h3>Prayer Hour &amp; Bible Study</h3>
+                    <p>Prayer hour for all from 6:00 - 8:30 PM, followed by Bible Study from 8:30 - 9:30 PM.</p>
+                </div>
+            </article>
+
+            <article class="event-card" data-event-id="saturday-prayer">
+                <div class="event-date">
+                    <span>Sat</span>
+                    <strong>5:00</strong>
+                </div>
+                <div>
+                    <h3>Saturday Prayer</h3>
+                    <p>Prayer from 5:00 - 7:00 PM.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="feasts-section">
+        <span class="section-label">2026 Feast Calendar</span>
+        <h2>Appointed Feasts of the Lord</h2>
+        <p>
+            Dates are listed for the Diaspora and begin at sunset. These are shown with
+            New Testament names and references where the feast is directly named or clearly echoed.
+        </p>
+
+        <div class="feast-grid">
+            <article class="feast-card" data-event-id="pesach-2026">
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/A_Seder_table_setting.jpg" alt="Passover seder table" loading="lazy">
+                <div>
+                    <span class="card-label">Passover / Unleavened Bread</span>
+                    <h3>Pesach</h3>
+                    <p class="feast-date">April 1 sunset - April 9 nightfall, 2026</p>
+                    <p><strong>15-22</strong> Nisan 5786. New Testament: Passover and Unleavened Bread.</p>
+                    <small>Luke 22:1; 1 Corinthians 5:7-8</small>
+                </div>
+            </article>
+
+            <article class="feast-card" data-event-id="firstfruits-2026">
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Combine_Harvesting_Wheat_-_Eastern_Washington_wheat_harvest.jpg" alt="Wheat harvest field" loading="lazy">
+                <div>
+                    <span class="card-label">Firstfruits</span>
+                    <h3>Firstfruits</h3>
+                    <p class="feast-date">April 2 sunset - April 3 sunset, 2026</p>
+                    <p><strong>16</strong> Nisan 5786. New Testament: Christ the firstfruits.</p>
+                    <small>1 Corinthians 15:20</small>
+                </div>
+            </article>
+
+            <article class="feast-card pentecost-feast" data-event-id="shavuot-2026">
+                <img src="Images/pentecost-2026.jpeg" alt="Shavuot Pentecost Holy Ghost Power Festival poster" loading="lazy">
+                <div>
+                    <span class="card-label">Pentecost</span>
+                    <h3>Shavuot / Feast of Weeks</h3>
+                    <p class="feast-date">May 21 sunset - May 23 nightfall, 2026</p>
+                    <p><strong>6-7 Sivan</strong> 5786. New Testament: Day of Pentecost.</p>
+                    <small>Acts 2:1</small>
+                </div>
+            </article>
+
+            <article class="feast-card" data-event-id="yom-teruah-2026">
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Independence_Day_Shofar.jpg" alt="A shofar being sounded" loading="lazy">
+                <div>
+                    <span class="card-label">Trumpets</span>
+                    <h3>Yom Teruah / Rosh Hashanah</h3>
+                    <p class="feast-date">September 11 sunset - September 13 nightfall, 2026</p>
+                    <p><strong>1-2 Tishrei</strong> 5787. New Testament: trumpet imagery and resurrection hope.</p>
+                    <small>1 Corinthians 15:52; 1 Thessalonians 4:16</small>
+                </div>
+            </article>
+
+            <article class="feast-card" data-event-id="yom-kippur-2026">
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Independence_Day_Shofar.jpg" alt="A shofar being sounded" loading="lazy">
+                <div>
+                    <span class="card-label">Day of Atonement</span>
+                    <h3>Yom Kippur / The Fast</h3>
+                    <p class="feast-date">September 20 sunset - September 21 nightfall, 2026</p>
+                    <p><strong>10 Tishrei</strong> 5787. New Testament: the Fast.</p>
+                    <small>Acts 27:9</small>
+                </div>
+            </article>
+
+            <article class="feast-card" data-event-id="sukkot-2026">
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Safrasquaresukkah2009.jpg" alt="A sukkah booth in Jerusalem" loading="lazy">
+                <div>
+                    <span class="card-label">Tabernacles</span>
+                    <h3>Sukkot / Feast of Tabernacles</h3>
+                    <p class="feast-date">September 25 sunset - October 2 nightfall, 2026</p>
+                    <p><strong>15-21 Tishrei</strong> 5787. New Testament: Feast of Tabernacles.</p>
+                    <small>John 7:2</small>
+                </div>
+            </article>
+
+            <article class="feast-card" data-event-id="shemini-atzeret-2026">
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Safrasquaresukkah2009.jpg" alt="A sukkah booth in Jerusalem" loading="lazy">
+                <div>
+                    <span class="card-label">Eighth Day</span>
+                    <h3>Shemini Atzeret / Last Great Day</h3>
+                    <p class="feast-date">October 2 sunset - October 4 nightfall, 2026</p>
+                    <p><strong>22-23 Tishrei</strong> 5787. New Testament: the last great day of the feast.</p>
+                    <small>John 7:37</small>
+                </div>
+            </article>
+
+            <article class="feast-card" data-event-id="hanukkah-2026">
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Hanukkah_candles.jpg" alt="Hanukkah candles being lit" loading="lazy">
+                <div>
+                    <span class="card-label">Feast of Dedication</span>
+                    <h3>Hanukkah / Festival of Lights</h3>
+                    <p class="feast-date">December 4 sunset - December 12 nightfall, 2026</p>
+                    <p><strong>25 Kislev - 2 Tevet</strong> 5787. New Testament: Feast of Dedication.</p>
+                    <small>John 10:22</small>
+                </div>
+            </article>
+        </div>
+
+        <p class="source-note">
+            Calendar dates verified with <a href="https://www.hebcal.com/holidays/2026" target="_blank" rel="noopener noreferrer">Hebcal's 2026 Diaspora holiday calendar</a>.
+        </p>
+    </section>
+
+    <section class="schedule-band">
+        <h2>Sunday Service Order</h2>
+        <p>
+            Our Sunday service runs from 8:30 AM to 1:00 PM
+            with time for prayer, worship, teaching, fellowship, and the Word.
+        </p>
+
+        <div class="service-order">
+            <div>
+                <strong>8:30 - 9:30 AM</strong>
+                <span>Prayer</span>
+            </div>
+            <div>
+                <strong>9:30 - 10:00 AM</strong>
+                <span>Praise &amp; Worship</span>
+            </div>
+            <div>
+                <strong>10:00 - 10:45 AM</strong>
+                <span>Bible Study / Teaching</span>
+            </div>
+            <div>
+                <strong>10:45 - 11:15 AM</strong>
+                <span>Praise &amp; Worship</span>
+            </div>
+            <div>
+                <strong>11:15 AM - 12:00 PM</strong>
+                <span>Visitors, Testimonies, Presentations &amp; Announcements</span>
+            </div>
+            <div>
+                <strong>12:00 - 1:00 PM</strong>
+                <span>Sermon</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <h2>Come Worship With Us</h2>
+        <p>There is a place for you and your family at Christ's Mission Church.</p>
+        <a href="contact.html" class="btn">Plan a Visit</a>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; <span class="current-year">2026</span> Christ's Mission Church. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="tel:+254722750727"><img src="Images/icon-phone.svg" alt="">Call</a>
+                <a href="https://wa.me/254722750727" target="_blank" rel="noopener noreferrer"><img src="Images/icon-whatsapp.svg" alt="">WhatsApp</a>
+                <a href="https://maps.app.goo.gl/nSy3ifH5L9tVrJJA7" target="_blank" rel="noopener noreferrer"><img src="Images/icon-location.svg" alt="">Location</a>
+                <a href="https://www.tiktok.com/@christmissionchurchmedia" target="_blank" rel="noopener noreferrer"><img src="Images/icon-tiktok.svg" alt="">TikTok</a>
+                <a href="https://www.instagram.com/christ_missionchurch" target="_blank" rel="noopener noreferrer"><img src="Images/icon-instagram.svg" alt="">Instagram</a>
+                <a href="https://www.facebook.com/share/g/18jx7vKJ1u/" target="_blank" rel="noopener noreferrer"><img src="Images/icon-facebook.svg" alt="">Facebook</a>
+                <a href="https://www.youtube.com/@christsmissionchurchke8321" target="_blank" rel="noopener noreferrer"><img src="Images/icon-youtube.svg" alt="">YouTube</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="Scripts/main.js"></script>
+    <script src="Scripts/events.js"></script>
+</body>
+</html>
+

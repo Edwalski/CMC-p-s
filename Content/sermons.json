@@ -1,0 +1,44 @@
+[
+    {
+        "id": "faith-that-moves-forward",
+        "title": "Faith That Moves Forward",
+        "type": "Sunday Service",
+        "speaker": "",
+        "date": "",
+        "scripture": "",
+        "summary": "Be encouraged to trust God's promises and keep walking in obedience.",
+        "audioUrl": "",
+        "videoUrl": "",
+        "actionLabel": "Request Recording",
+        "actionUrl": "contact.html",
+        "published": true
+    },
+    {
+        "id": "living-as-disciples",
+        "title": "Living as Disciples",
+        "type": "Bible Study",
+        "speaker": "",
+        "date": "",
+        "scripture": "",
+        "summary": "A teaching series on growing in Christ, serving others, and bearing fruit.",
+        "audioUrl": "",
+        "videoUrl": "",
+        "actionLabel": "Learn More",
+        "actionUrl": "contact.html",
+        "published": true
+    },
+    {
+        "id": "the-power-of-prayer",
+        "title": "The Power of Prayer",
+        "type": "Prayer Night",
+        "speaker": "",
+        "date": "",
+        "scripture": "",
+        "summary": "A message on seeking God with confidence, humility, and expectation.",
+        "audioUrl": "",
+        "videoUrl": "",
+        "actionLabel": "Join Prayer",
+        "actionUrl": "contact.html",
+        "published": true
+    }
+]

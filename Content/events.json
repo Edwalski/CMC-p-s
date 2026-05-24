@@ -1,0 +1,29 @@
+[
+    {
+        "id": "sunday-worship-service",
+        "day": "Sunday",
+        "startTime": "8:30 AM",
+        "endTime": "1:00 PM",
+        "title": "Sunday Worship Service",
+        "description": "Prayer, praise and worship, Bible teaching, testimonies, presentations, announcements, and the sermon.",
+        "published": true
+    },
+    {
+        "id": "monday-workers-prayer-bible-study",
+        "day": "Monday",
+        "startTime": "6:00 PM",
+        "endTime": "8:30 PM",
+        "title": "Church Workers Prayer & Bible Study",
+        "description": "Church workers prayer hour from 6:00 - 7:00 PM, followed by Bible Study for all from 7:30 - 8:30 PM.",
+        "published": true
+    },
+    {
+        "id": "wednesday-women-meeting",
+        "day": "Wednesday",
+        "startTime": "5:00 PM",
+        "endTime": "8:00 PM",
+        "title": "Women Meeting, Prayer & Bible Study",
+        "description": "Women meet for prayer and their own Bible Study, early enough to return home and tend to their families.",
+        "published": true
+    }
+]

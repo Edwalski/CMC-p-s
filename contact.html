@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Christ's Mission Church</title>
+    <link rel="stylesheet" href="Style/main.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo-container">
+                <img src="Images/logo.png" alt="Christ's Mission Church Logo" class="logo">
+                <span class="brand-text">Christ's Mission Church <small>Mizpah</small></span>
+            </div>
+
+            <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-controls="primary-navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links" id="primary-navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="sermons.html">Sermons</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="ministries.html">Ministries</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Member Portal</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-hero">
+        <h1>Contact Us</h1>
+        <p>
+            We would love to hear from you, pray with you,
+            and help you plan your visit.
+        </p>
+    </section>
+
+    <section class="contact-section">
+        <div class="contact-layout">
+            <div class="contact-details">
+                <h2>Plan Your Visit</h2>
+                <p>
+                    Join us for worship, teaching, prayer, and fellowship. Reach out
+                    with questions about services, ministries, prayer needs, or directions.
+                </p>
+
+                <div class="detail-list">
+                    <div>
+                        <strong>Sunday Service</strong>
+                        <span>8:30 AM - 1:00 PM</span>
+                    </div>
+                    <div>
+                        <strong>Weekly Bible Study</strong>
+                        <span>Mon, Tue &amp; Thu 7:30 - 8:30 PM; Fri 8:30 - 9:30 PM</span>
+                    </div>
+                    <div>
+                        <strong>Women Meeting</strong>
+                        <span>Wednesday, 5:00 - 8:00 PM</span>
+                    </div>
+                    <div>
+                        <strong>Email</strong>
+                        <span>info@christsmissionchurch.org</span>
+                    </div>
+                    <div>
+                        <strong>Phone / WhatsApp</strong>
+                        <span class="contact-link-row">
+                            <a href="tel:+254722750727"><img src="Images/icon-phone.svg" alt="">+254 722 750 727</a>
+                            <a href="https://wa.me/254722750727" target="_blank" rel="noopener noreferrer"><img src="Images/icon-whatsapp.svg" alt="">WhatsApp</a>
+                        </span>
+                    </div>
+                    <div>
+                        <strong>Location</strong>
+                        <span>
+                            Upper Milimani, Thorn Grove Area, Railways Estate - Kitengela
+                            <a href="https://maps.app.goo.gl/nSy3ifH5L9tVrJJA7" target="_blank" rel="noopener noreferrer"><img src="Images/icon-location.svg" alt="">View on Google Maps</a>
+                        </span>
+                    </div>
+                    <div>
+                        <strong>Social Media</strong>
+                        <span class="contact-link-row">
+                            <a href="https://www.tiktok.com/@christmissionchurchmedia" target="_blank" rel="noopener noreferrer"><img src="Images/icon-tiktok.svg" alt="">TikTok</a>
+                            <a href="https://www.instagram.com/christ_missionchurch" target="_blank" rel="noopener noreferrer"><img src="Images/icon-instagram.svg" alt="">Instagram</a>
+                            <a href="https://www.facebook.com/share/g/18jx7vKJ1u/" target="_blank" rel="noopener noreferrer"><img src="Images/icon-facebook.svg" alt="">Facebook</a>
+                            <a href="https://www.youtube.com/@christsmissionchurchke8321" target="_blank" rel="noopener noreferrer"><img src="Images/icon-youtube.svg" alt="">YouTube</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <form class="contact-form">
+                <h2>Send a Message</h2>
+                <div class="coming-soon-banner">
+                    <strong>Contact form coming soon</strong>
+                    <p>This message form will be activated after the website email/backend setup is connected. For now, please call or use WhatsApp.</p>
+                </div>
+
+                <div class="form-row">
+                    <div>
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required disabled>
+                    </div>
+
+                    <div>
+                        <label for="country">Country</label>
+                        <select id="country" name="country" disabled>
+                            <option value="KE" selected>Kenya (+254)</option>
+                            <option value="UG">Uganda (+256)</option>
+                            <option value="TZ">Tanzania (+255)</option>
+                            <option value="RW">Rwanda (+250)</option>
+                            <option value="BI">Burundi (+257)</option>
+                            <option value="SS">South Sudan (+211)</option>
+                            <option value="US">United States (+1)</option>
+                            <option value="GB">United Kingdom (+44)</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div>
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Your phone number" autocomplete="tel-national" disabled>
+                    </div>
+
+                    <div>
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com" required disabled>
+                    </div>
+                </div>
+
+                <label for="topic">How can we help?</label>
+                <select id="topic" name="topic" disabled>
+                    <option value="visit">I am planning to visit</option>
+                    <option value="prayer">I need prayer</option>
+                    <option value="ministry">I want to join a ministry</option>
+                    <option value="general">General question</option>
+                </select>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="How can we help?" required disabled></textarea>
+
+                <button type="button" class="btn disabled-btn" disabled>Messaging Coming Soon</button>
+            </form>
+
+            <div class="map-panel">
+                <div>
+                    <h2>Find Us</h2>
+                    <p>Christ's Mission Church - Mizpah is located at Upper Milimani, Thorn Grove Area, Railways Estate - Kitengela.</p>
+                </div>
+                <a href="https://maps.app.goo.gl/nSy3ifH5L9tVrJJA7" class="btn-secondary" target="_blank" rel="noopener noreferrer">Open Map</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <h2>Planning Your First Visit?</h2>
+        <p>Let us know you are coming and we will be ready to welcome you.</p>
+        <a href="events.html" class="btn">See Service Times</a>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; <span class="current-year">2026</span> Christ's Mission Church. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="tel:+254722750727"><img src="Images/icon-phone.svg" alt="">Call</a>
+                <a href="https://wa.me/254722750727" target="_blank" rel="noopener noreferrer"><img src="Images/icon-whatsapp.svg" alt="">WhatsApp</a>
+                <a href="https://maps.app.goo.gl/nSy3ifH5L9tVrJJA7" target="_blank" rel="noopener noreferrer"><img src="Images/icon-location.svg" alt="">Location</a>
+                <a href="https://www.tiktok.com/@christmissionchurchmedia" target="_blank" rel="noopener noreferrer"><img src="Images/icon-tiktok.svg" alt="">TikTok</a>
+                <a href="https://www.instagram.com/christ_missionchurch" target="_blank" rel="noopener noreferrer"><img src="Images/icon-instagram.svg" alt="">Instagram</a>
+                <a href="https://www.facebook.com/share/g/18jx7vKJ1u/" target="_blank" rel="noopener noreferrer"><img src="Images/icon-facebook.svg" alt="">Facebook</a>
+                <a href="https://www.youtube.com/@christsmissionchurchke8321" target="_blank" rel="noopener noreferrer"><img src="Images/icon-youtube.svg" alt="">YouTube</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="Scripts/main.js"></script>
+</body>
+</html>
+

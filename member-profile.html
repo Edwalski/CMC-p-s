@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member Profile | Christ's Mission Church</title>
+    <link rel="stylesheet" href="Style/main.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo-container">
+                <img src="Images/logo.png" alt="Christ's Mission Church Logo" class="logo">
+                <span class="brand-text">Christ's Mission Church <small>Mizpah</small></span>
+            </div>
+            <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-controls="primary-navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="primary-navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="sermons.html">Sermons</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="ministries.html">Ministries</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Member Portal</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-hero">
+        <h1>Member Profile</h1>
+        <p>Review your details and request corrections for admin approval.</p>
+    </section>
+
+    <main class="portal-page">
+        <section class="portal-panel wide-panel">
+            <span class="section-label">Profile</span>
+            <h2>My Details</h2>
+            <div class="coming-soon-banner">
+                <strong>Member profiles are coming soon</strong>
+                <p>Profile editing will be available after secure login and admin approval are connected.</p>
+            </div>
+            <p class="approval-note">Profile edits will be sent to admin for approval before replacing the official record.</p>
+            <form class="portal-form">
+                <div class="form-row">
+                    <div>
+                        <label for="profile-name">Full Name</label>
+                        <input type="text" id="profile-name" name="profile-name" value="Member Name" disabled>
+                    </div>
+                    <div>
+                        <label for="profile-phone">Phone Number</label>
+                        <input type="tel" id="profile-phone" name="profile-phone" value="+254" disabled>
+                    </div>
+                </div>
+                <label for="profile-address">Address / Area</label>
+                <textarea id="profile-address" name="profile-address" rows="4" disabled>Kitengela</textarea>
+                <button class="btn disabled-btn" type="button" disabled>Profile Updates Coming Soon</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; <span class="current-year">2026</span> Christ's Mission Church. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="tel:+254722750727"><img src="Images/icon-phone.svg" alt="">Call</a>
+                <a href="https://wa.me/254722750727" target="_blank" rel="noopener noreferrer"><img src="Images/icon-whatsapp.svg" alt="">WhatsApp</a>
+                <a href="https://maps.app.goo.gl/nSy3ifH5L9tVrJJA7" target="_blank" rel="noopener noreferrer"><img src="Images/icon-location.svg" alt="">Location</a>
+                <a href="https://www.tiktok.com/@christmissionchurchmedia" target="_blank" rel="noopener noreferrer"><img src="Images/icon-tiktok.svg" alt="">TikTok</a>
+                <a href="https://www.instagram.com/christ_missionchurch" target="_blank" rel="noopener noreferrer"><img src="Images/icon-instagram.svg" alt="">Instagram</a>
+                <a href="https://www.facebook.com/share/g/18jx7vKJ1u/" target="_blank" rel="noopener noreferrer"><img src="Images/icon-facebook.svg" alt="">Facebook</a>
+                <a href="https://www.youtube.com/@christsmissionchurchke8321" target="_blank" rel="noopener noreferrer"><img src="Images/icon-youtube.svg" alt="">YouTube</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="Scripts/main.js"></script>
+</body>
+</html>
+
+

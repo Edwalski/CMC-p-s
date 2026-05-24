@@ -1,0 +1,37 @@
+[
+    {
+        "id": "youth-ministry",
+        "name": "Youth Ministry",
+        "description": "Helping young people grow in faith, purpose, and godly character.",
+        "leader": "",
+        "published": true
+    },
+    {
+        "id": "women-ministry",
+        "name": "Women Ministry",
+        "description": "Encouraging women through prayer, fellowship, teaching, and service.",
+        "leader": "",
+        "published": true
+    },
+    {
+        "id": "men-ministry",
+        "name": "Men Ministry",
+        "description": "Equipping men to lead faithfully in their homes, church, and community.",
+        "leader": "",
+        "published": true
+    },
+    {
+        "id": "children-ministry",
+        "name": "Children Ministry",
+        "description": "Creating a safe, joyful place where children learn about Jesus.",
+        "leader": "",
+        "published": true
+    },
+    {
+        "id": "outreach-ministry",
+        "name": "Outreach Ministry",
+        "description": "Serving the community, sharing the Gospel, and meeting practical needs with Christ's love.",
+        "leader": "",
+        "published": true
+    }
+]
