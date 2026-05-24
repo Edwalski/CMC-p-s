@@ -993,6 +993,22 @@ footer {
     background: #0055aa;
 }
 
+.scripture-link-actions a {
+    background: #003366;
+    border-radius: 999px;
+    color: white;
+    display: inline-flex;
+    font-weight: bold;
+    justify-content: center;
+    min-height: 40px;
+    padding: 8px 14px;
+    text-decoration: none;
+}
+
+.scripture-link-actions a:hover {
+    background: #0055aa;
+}
+
 .scripture-viewer {
     background: white;
     border: 1px solid #c9d8e8;
