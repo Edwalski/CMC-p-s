@@ -1,0 +1,59 @@
+{
+    "hero": {
+        "title": "Christ's Mission Church - Mizpah",
+        "subtitle": "A home of apostolic missions, deep worship, prayer, prophesy, miracles, discipleship, community and victorious living in righteousness.",
+        "primaryButton": {
+            "label": "Plan a Visit",
+            "url": "contact.html"
+        }
+    },
+    "mission": {
+        "title": "Our Mission",
+        "intro": "Christ's Mission Church - Mizpah is called to watch, expand the Kingdom, exercise spiritual dominion, and occupy faithfully until Jesus returns.",
+        "items": [
+            {
+                "scripture": "Matthew 26:41",
+                "title": "To Watch",
+                "summary": "To remain alert in prayer, spiritual discernment, and faithful obedience."
+            },
+            {
+                "scripture": "Matthew 28:18-20",
+                "title": "Expand the Kingdom",
+                "summary": "To preach, disciple, baptize, and teach the whole counsel of Jesus Christ."
+            },
+            {
+                "scripture": "Mark 16:14-18",
+                "title": "Exercise Spiritual Dominion",
+                "summary": "To minister in faith, prayer, signs, and the authority of Christ."
+            },
+            {
+                "scripture": "Luke 19:13",
+                "title": "Occupy Until Jesus Returns",
+                "summary": "To serve, steward, build, and remain fruitful until the Lord returns."
+            }
+        ]
+    },
+    "highlights": [
+        {
+            "label": "Bible Study",
+            "title": "Weekly Teachings",
+            "summary": "Read current and previous Bible Study notes as the church grows in the Word together.",
+            "buttonLabel": "View Bible Studies",
+            "url": "sermons.html"
+        },
+        {
+            "label": "Events",
+            "title": "Services and Appointed Seasons",
+            "summary": "Follow weekly gatherings, special events, and the appointed feasts of the Lord.",
+            "buttonLabel": "See Events",
+            "url": "events.html"
+        },
+        {
+            "label": "Ministries",
+            "title": "Find Your Place to Serve",
+            "summary": "Connect through prayer, worship, youth, women, men, children, outreach, and practical service.",
+            "buttonLabel": "Explore Ministries",
+            "url": "ministries.html"
+        }
+    ]
+}

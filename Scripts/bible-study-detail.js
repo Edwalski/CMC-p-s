@@ -70,6 +70,27 @@
         return nav;
     };
 
+    const renderCopyrightNotice = () => {
+        const notice = create("section", "notes-block scripture-reader-card");
+        const heading = create("div", "scripture-reader-heading");
+        const headingText = create("div");
+        headingText.appendChild(create("span", "card-label", "Scripture Reader"));
+        headingText.appendChild(create("h3", "", "Open Scripture Readings"));
+        heading.appendChild(headingText);
+        notice.appendChild(heading);
+        notice.appendChild(create(
+            "p",
+            "",
+            "Use the NIV, MEV, and NKJV buttons beside each study day to open the full readings in a new tab. CMC - Mizpah does not display full copyrighted Bible text inside this page until the church has the correct digital license or API."
+        ));
+        notice.appendChild(create(
+            "p",
+            "scripture-copyright-note",
+            "Scripture version rights belong to their respective publishers. Short quotations may be used with proper attribution where permitted; full in-page reading for NIV, MEV, and NKJV will be added only through an approved Bible API or written permission."
+        ));
+        return notice;
+    };
+
     const renderStudy = (study, studies, activeIndex) => {
         document.title = `${study.week} Bible Study | Christ's Mission Church`;
         heroWeek.textContent = `${study.week} Bible Study`;
@@ -98,6 +119,7 @@
             intro.appendChild(create("p", "", study.summary));
         }
         detail.appendChild(intro);
+        detail.appendChild(renderCopyrightNotice());
 
         const sessions = Array.isArray(study.sessions) ? study.sessions : [];
         sessions.forEach((session) => {

@@ -56,12 +56,13 @@
                         <span class="card-label">Scripture Reader</span>
                         <h3>Open This Week's Scriptures</h3>
                     </div>
+                    <button class="scripture-toggle" type="button" aria-expanded="true" aria-controls="scripture-reader-content">Hide Scripture Links</button>
                 </div>
 
                 <div id="scripture-reader-content" class="scripture-reader-content">
                     <p>
-                        Open the full scripture readings in NIV, MEV, or NKJV. The passages load
-                        in the scripture viewer below.
+                        Open the full scripture readings in NIV, MEV, or NKJV in a new tab. CMC - Mizpah does not display
+                        full copyrighted Bible text inside this page until the church has the correct digital license or API.
                     </p>
 
                     <div class="scripture-reader-grid">
@@ -96,24 +97,11 @@
                         </article>
                     </div>
 
-                    <div class="scripture-viewer" id="scripture-viewer" hidden>
-                        <div class="scripture-viewer-header">
-                            <div>
-                                <span class="card-label">Selected Passage</span>
-                                <h4 id="scripture-viewer-title">Scripture Viewer</h4>
-                            </div>
-                            <div class="scripture-viewer-actions">
-                                <a href="https://www.biblegateway.com/" id="scripture-viewer-link" target="_blank" rel="noopener noreferrer">Open in new tab</a>
-                                <button class="scripture-toggle" type="button" aria-expanded="true" aria-controls="scripture-frame-area">Hide</button>
-                            </div>
-                        </div>
-                        <div id="scripture-frame-area">
-                            <iframe id="scripture-frame" title="BibleGateway scripture reader" loading="lazy"></iframe>
-                            <p class="scripture-viewer-note">
-                                If the passage does not appear in this card, use Open in new tab.
-                            </p>
-                        </div>
-                    </div>
+                    <p class="scripture-copyright-note">
+                        Scripture version rights belong to their respective publishers. Short quotations may be used with
+                        proper attribution where permitted; full in-page reading for NIV, MEV, and NKJV will be added only
+                        through an approved Bible API or written permission.
+                    </p>
                 </div>
             </section>
 

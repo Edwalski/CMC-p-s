@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Christ's Mission Church</title>
+    <title>Christ's Mission Church - Mizpah</title>
     <link rel="stylesheet" href="Style/main.css">
 </head>
-<body>
+<body data-home-page>
 
     <!-- Header -->
     <header>
@@ -36,68 +36,75 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <h1>Christ's Mission Church - Mizpah</h1>
-        <p>
+        <span class="hero-kicker">CMC - Mizpah Home</span>
+        <h1 id="home-hero-title">Christ's Mission Church - Mizpah</h1>
+        <p id="home-hero-subtitle">
             A home of apostolic missions, deep worship, prayer, prophesy,
             miracles, discipleship, community and victorious living in righteousness.
         </p>
-        <a href="contact.html" class="btn">Plan a Visit</a>
+        <a href="contact.html" class="btn" id="home-hero-button">Plan a Visit</a>
     </section>
 
     <!-- About / Mission -->
     <section class="mission home-mission">
-        <h2>Our Mission</h2>
-        <p>
+        <h2 id="home-mission-title">Our Mission</h2>
+        <p id="home-mission-intro">
             Christ's Mission Church - Mizpah is called to watch, expand the Kingdom,
             exercise spiritual dominion, and occupy faithfully until Jesus returns.
         </p>
 
-        <div class="mission-grid">
+        <div class="mission-grid" id="home-mission-grid">
             <article class="mission-card">
                 <span class="card-label">Matthew 26:41</span>
                 <h3>To Watch</h3>
+                <p>To remain alert in prayer, spiritual discernment, and faithful obedience.</p>
             </article>
 
             <article class="mission-card">
                 <span class="card-label">Matthew 28:18-20</span>
                 <h3>Expand the Kingdom</h3>
+                <p>To preach, disciple, baptize, and teach the whole counsel of Jesus Christ.</p>
             </article>
 
             <article class="mission-card">
                 <span class="card-label">Mark 16:14-18</span>
                 <h3>Exercise Spiritual Dominion</h3>
+                <p>To minister in faith, prayer, signs, and the authority of Christ.</p>
             </article>
 
             <article class="mission-card">
                 <span class="card-label">Luke 19:13</span>
                 <h3>Occupy Until Jesus Returns</h3>
+                <p>To serve, steward, build, and remain fruitful until the Lord returns.</p>
             </article>
         </div>
     </section>
 
-    <!-- Sermons -->
-    <section class="sermons">
-        <h2>Latest Sermons</h2>
-        <p>Listen to teachings, watch services, and grow spiritually.</p>
-        <a href="sermons.html" class="btn-secondary">View Sermons</a>
-    </section>
+    <!-- Key Areas -->
+    <section class="home-highlights">
+        <h2>This Week at Mizpah</h2>
+        <p>Stay connected to teachings, appointed seasons, services, and ministry life.</p>
+        <div class="highlight-grid" id="home-highlight-grid">
+            <article class="home-highlight-card">
+                <span class="card-label">Bible Study</span>
+                <h3>Weekly Teachings</h3>
+                <p>Read current and previous Bible Study notes as the church grows in the Word together.</p>
+                <a href="sermons.html" class="text-link">View Bible Studies</a>
+            </article>
 
-    <!-- Events -->
-    <section class="events">
-        <h2>Upcoming Events</h2>
-        <p>Sunday service begins at 8:30 AM, with weekly prayer and Bible study gatherings Monday through Saturday.</p>
-        <a href="events.html" class="btn-secondary">See Events</a>
-    </section>
+            <article class="home-highlight-card">
+                <span class="card-label">Events</span>
+                <h3>Services and Appointed Seasons</h3>
+                <p>Follow weekly gatherings, special events, and the appointed feasts of the Lord.</p>
+                <a href="events.html" class="text-link">See Events</a>
+            </article>
 
-    <!-- Ministries -->
-    <section class="ministries">
-        <h2>Our Ministries</h2>
-        <div class="ministry-grid">
-            <div class="card">Youth Ministry</div>
-            <div class="card">Women Ministry</div>
-            <div class="card">Men Ministry</div>
-            <div class="card">Children Ministry</div>
-            <div class="card">Outreach Ministry</div>
+            <article class="home-highlight-card">
+                <span class="card-label">Ministries</span>
+                <h3>Find Your Place to Serve</h3>
+                <p>Connect through prayer, worship, youth, women, men, children, outreach, and practical service.</p>
+                <a href="ministries.html" class="text-link">Explore Ministries</a>
+            </article>
         </div>
     </section>
 
@@ -124,6 +131,7 @@
         </div>
     </footer>
 
+    <script src="Scripts/home-content.js"></script>
     <script src="Scripts/main.js"></script>
 </body>
 </html>

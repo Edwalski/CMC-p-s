@@ -2,35 +2,65 @@
     {
         "id": "youth-ministry",
         "name": "Youth Ministry",
-        "description": "Helping young people grow in faith, purpose, and godly character.",
+        "focus": "Discipleship and identity",
+        "description": "Raising young people in faith, prayer, service, and godly identity.",
+        "serveAreas": [
+            "Youth fellowship",
+            "Prayer and Bible Study",
+            "Service and mentorship"
+        ],
         "leader": "",
         "published": true
     },
     {
         "id": "women-ministry",
         "name": "Women Ministry",
-        "description": "Encouraging women through prayer, fellowship, teaching, and service.",
+        "focus": "Prayer and fellowship",
+        "description": "Strengthening women through fellowship, prayer, Bible Study, and family support.",
+        "serveAreas": [
+            "Wednesday meeting",
+            "Prayer and teaching",
+            "Family encouragement"
+        ],
         "leader": "",
         "published": true
     },
     {
         "id": "men-ministry",
         "name": "Men Ministry",
-        "description": "Equipping men to lead faithfully in their homes, church, and community.",
+        "focus": "Leadership and stewardship",
+        "description": "Building men and heads of families in prayer, leadership, stewardship, and faith.",
+        "serveAreas": [
+            "Men's prayer hour",
+            "Family leadership",
+            "Service in the church"
+        ],
         "leader": "",
         "published": true
     },
     {
         "id": "children-ministry",
         "name": "Children Ministry",
-        "description": "Creating a safe, joyful place where children learn about Jesus.",
+        "focus": "Foundations of faith",
+        "description": "Nurturing children in the Word, worship, prayer, and godly character.",
+        "serveAreas": [
+            "Children's teaching",
+            "Worship and prayer",
+            "Safe care during services"
+        ],
         "leader": "",
         "published": true
     },
     {
         "id": "outreach-ministry",
         "name": "Outreach Ministry",
-        "description": "Serving the community, sharing the Gospel, and meeting practical needs with Christ's love.",
+        "focus": "Mission beyond the walls",
+        "description": "Carrying the Gospel and practical love beyond the church walls.",
+        "serveAreas": [
+            "Evangelism",
+            "Community care",
+            "Special outreach events"
+        ],
         "leader": "",
         "published": true
     }
