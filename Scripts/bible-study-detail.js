@@ -44,6 +44,28 @@
         return list;
     };
 
+    const renderScriptureGroup = (title, scriptures) => {
+        if (!Array.isArray(scriptures) || !scriptures.length) {
+            return null;
+        }
+
+        const list = create("div", "scripture-list");
+        list.appendChild(create("strong", "", title || "Scriptures"));
+        list.appendChild(create("span", "", scriptures.join("; ")));
+
+        const actions = create("div", "scripture-actions scripture-link-actions");
+        ["NIV", "MEV", "NKJV"].forEach((version) => {
+            const link = create("a", "", version);
+            link.href = bibleGatewayUrl(scriptures, version);
+            link.target = "_blank";
+            link.rel = "noopener noreferrer";
+            actions.appendChild(link);
+        });
+
+        list.appendChild(actions);
+        return list;
+    };
+
     const renderStudyNavigation = (studies, activeIndex) => {
         const nav = create("nav", "study-detail-nav");
         nav.setAttribute("aria-label", "Bible Study navigation");
@@ -130,9 +152,19 @@
                 block.appendChild(create("p", "", session.comment));
             }
 
-            const scriptureList = renderScriptureButtons(session);
-            if (scriptureList) {
-                block.appendChild(scriptureList);
+            const topics = Array.isArray(session.topics) ? session.topics : [];
+            if (topics.length) {
+                topics.forEach((topic) => {
+                    const topicList = renderScriptureGroup(topic.title, topic.scriptures);
+                    if (topicList) {
+                        block.appendChild(topicList);
+                    }
+                });
+            } else {
+                const scriptureList = renderScriptureButtons(session);
+                if (scriptureList) {
+                    block.appendChild(scriptureList);
+                }
             }
 
             detail.appendChild(block);
